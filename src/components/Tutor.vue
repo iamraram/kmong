@@ -158,9 +158,7 @@ a {
     background-repeat: no-repeat;
 }
 
-.star:last-child {
-    margin-right: 5px;
-}
+ 
 
 .tutor-box {
     display: inline-block;

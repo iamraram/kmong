@@ -238,7 +238,7 @@ a {
 }
 
 .block-child {
-    width: 1150px;
+    width: 1250px;
     height: 82%;
     display: flex;
     flex-direction: column;
