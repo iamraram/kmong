@@ -47,6 +47,28 @@ export default {
     align-items: center;
     justify-content: center;
     line-height: 30px;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    .img {
+        padding: 20px;
+        height: 270px;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .main-title {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .sub-title {
+        width: 220px;
+        font-size: 16px;
+        line-height: 25px;
+    }
 }
 
 </style>

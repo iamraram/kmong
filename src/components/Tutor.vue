@@ -7,10 +7,13 @@
                 최근 많은 튜티들이<br/>
                 예약했어요.
             </div>
+            <div class="title2">
+                이 튜터 어때요? 최근 많은 튜티들이 예약했어요.
+            </div>
             <div class="len">
                 <b>01</b> / 05
             </div>
-            <a href="/">
+            <a href="/" class="none_2">
                 <div class="border">
                     튜터 만나러 가기
                     <div class="arrow-img"></div>
@@ -57,6 +60,12 @@
                 </div>
             </div>
         </div>
+        <a href="/" class="none_1">
+            <div class="border">
+                튜터 만나러 가기
+                <div class="arrow-img"></div>
+            </div>
+        </a>
         <div class="arrow-img2"></div>
     </div>
   </div>
@@ -232,11 +241,12 @@ a {
 
 .tutor-content {
     width: 100%;
-    height: 450px;
+    height: 550px;
     display: flex;
     background-color: rgb(247, 248, 251);
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .main-content {
@@ -276,10 +286,111 @@ a {
     padding-bottom: 12px;
 }
 
+.title2 {
+    display: none;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.none_1 {
+    display: none;
+}
+
 .flex {
     display: inline-block;
     width: 22px;
     height: 22px;
+}
+
+@media screen and (max-width: 768px) {
+    .arrow-img2 {
+        display: none;
+    }
+
+    .main-content {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+        height: 520px;
+    }
+
+    .right-box {
+        width: 100%;
+        overflow: scroll;
+        height: 400px;
+        justify-content: flex-start;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .tutor-box,
+    .top,
+    .bottom {
+        width: 260px;
+
+    }
+    .tutor-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: none;
+    }
+    .top,.bottom {
+        box-shadow: 1px 1px 10px 1px rgb(230 230 230);
+    }
+    .bottom {
+        height: 145px;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .right-box {
+        overflow: scroll
+    }
+
+    .len {
+        display: none;
+    }
+
+    .none_2 {
+        display: none;
+    }
+
+    .none_1 {
+        display: flex;
+        width: 100%;
+    }
+
+    .border {
+       width: 100%;
+    }
+
+    .left-box {
+        height: 60px;
+    }
+
+    .tutor-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 30px 0;
+    }
+
+    .title2 {
+        display: flex;
+        margin-bottom: 15px;
+    }
+
+    .left-box {
+        width: 100%;
+    }
+
 }
 
 </style>

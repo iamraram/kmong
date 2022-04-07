@@ -10,6 +10,21 @@
                     </li>
                 </a>
             </div>
+            <div class="right-content2">
+            <div class="coin-value">
+                {{coin_value}}
+                <div class="coin-img">
+                    P
+                </div>
+            </div>
+            <div class="lang-set">
+                <div class="profile-img" />
+                <div class="lang-arrow">
+                    한국어
+                    <div class="down-img" />
+                </div>
+            </div>
+        </div>
         </div>
         <div class="right-content">
             <div class="coin-value">
@@ -25,6 +40,13 @@
                     <div class="down-img" />
                 </div>
             </div>
+        </div>
+        <div class="header-menu2">
+            <a href="/" v-for="(repeat, i) in menu_value" :key="i" class="header-menu-content">
+                <li>
+                    {{menu_value[i]}}
+                </li>
+            </a>
         </div>
     </div>
   </div>
@@ -61,6 +83,7 @@ a {
     padding: 5px;
     padding-left: 0;
     padding-right: 0;
+    position: relative;
 }
 
 .header-content {
@@ -87,6 +110,7 @@ li {
     height: 45px;
     background-size: 100%;
     background-repeat: no-repeat;
+    margin-left: 7px;
 }
 
 .down-img {
@@ -143,7 +167,8 @@ li {
     justify-content: space-between;
 }
 
-.right-content {
+.right-content,
+.right-content2 {
     display: flex;
     flex-direction: row;
     width: 240px;
@@ -179,6 +204,72 @@ li {
     justify-content: center;
     color: white;
     font-weight: 600;
+}
+
+.header-menu2,
+.right-content2 {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .header  {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+    }
+
+    .logo-img {
+        position: relative;
+        bottom: 3px;
+    }
+
+    .lang-arrow {
+        margin-right: 10px;
+    }
+
+    .header-content {
+        width: 100%;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .header-menu,
+    .right-content {
+        display: none;
+    }
+
+    .left-content {
+        width: 100%;
+    }
+
+    .lang-set {
+        justify-content: center;
+    }
+
+    .right-content2 {
+        justify-content: flex-end;
+        display: 280px;
+    }
+
+    .profile-img {
+        margin-right: 10px;
+    }
+
+    .coin-value {
+        margin-right: 10px;
+    }
+
+    .header-menu2,
+    .right-content2 {
+        display: flex;
+    }
+
+    /* .header-menu {
+        display: none;
+    } */
 }
 
 

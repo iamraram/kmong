@@ -235,6 +235,7 @@ a {
     justify-content: center;
     align-items: center;
     height: 1100px;
+    position: relative;
 }
 
 .block-child {
@@ -252,6 +253,85 @@ a {
 .subtitle {
     font-weight: 700;
     font-size: 33px;
+}
+
+@media screen and (max-width: 768px) {
+    .subtitle {
+        font-size: 18px;
+        text-align: left;
+        font-weight: 700;
+        line-height: 45px;
+    }
+
+    .block-children {
+        width: 100%;
+    }
+
+    .videos-child:first-child {
+        margin-left: 0;
+    }
+
+    .blocks {
+        height: 800px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .block-children:last-child {
+        margin-top: 40px;
+    }
+
+    .videos {
+        overflow: scroll
+    }
+
+    .img-youtube {
+        width: 90px;
+        height: 22px;
+        align-items: center;
+    }
+
+    .videos-child,
+    .videos-child2 {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .videos {
+        margin-top: 5px;
+    }
+
+    .top {
+        width: 100%;
+    }
+
+    .videos {
+        width: 100%;
+    }
+
+    .somenail-img,
+    .somenail-img2 {
+        width: 140px;
+        height: 110px;
+        background-size: 150%;
+    }
+    
+    .small {
+        display: none;
+    }
+
+    .block-child {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .tutor-info {
+        margin-top: 25px;
+    }
+
+    .you {
+        font-size: 12px;
+    }
 }
 
 </style>
@@ -276,9 +356,9 @@ export default {
               {
                 title: '[Korean_1/300] Introduction to the korean Alpabet',
                 img_src: '/',
-                views: 3333,
-                likes: 3333,
-                goods: 3333,
+                views: 33,
+                likes: 33,
+                goods: 33,
                 stars: '5.0'
               },
               {
@@ -300,22 +380,22 @@ export default {
           ],
           youtube: [
               {
+                title: '딱 1분만 집중해서 들어봐. 딱 1분만 집중해서 들어봐.',
+                img_src: '/',
+                views: 5500,
+              },
+              {
+                title: '우리는 밥을 먹잖아? 우리는 밥을 먹잖아?',
+                img_src: '/',
+                views: 5500,
+              },
+              {
                 title: '딱 1분만 집중해서 들어봐.',
                 img_src: '/',
                 views: 5500,
               },
               {
-                title: '우리는 밥을 먹잖아? 밥을 먹어야 살 수 있는데 그렇지 않은 동물이 있더라고.',
-                img_src: '/',
-                views: 5500,
-              },
-              {
-                title: '그 동물은 바로 거북이인데 거북이는 밥을 먹지 않아.',
-                img_src: '/',
-                views: 5500,
-              },
-              {
-                title: '가나다라마바사 가나다라마바사',
+                title: '우리는 밥을 먹잖아?',
                 img_src: '/',
                 views: 5500,
               }

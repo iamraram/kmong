@@ -1,5 +1,5 @@
 <template>
-<div>
+<div style="position: relative;" class="top">
   <div class="footer">
     <div class="footer-children">
       <div class="footer-child">
@@ -28,7 +28,12 @@
       </div>
     </div>
     <div class="small">
-      <div class="footer-children">
+      <div class="footer-children non-visible">
+        대표이사: {{ceo}}, 주소지: {{address}}, 사업자등록번호: {{num}},
+        교육서비스업신고번호: {{num2}}, 사무실 주소: {{office}}, 개인정보보호책임자: {{res}},
+        전화: {{phone}}, 팩스: {{fax}}, Email: {{email}}
+      </div>
+      <div class="footer-children visible">
         <div class="footer-child">
           <div class="footer-link2">
             대표이사: {{ceo}}
@@ -44,7 +49,7 @@
           </div>
         </div>
       </div>
-      <div class="footer-children">
+      <div class="footer-children visible">
         <div class="footer-child">
           <div class="footer-link2">
             사무실 주소: {{office}}
@@ -104,6 +109,10 @@
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
+}
+
+.top {
+  margin-top: 150px;
 }
 
 .footer {
@@ -201,6 +210,60 @@
 .copyright {
   color: rgb(210, 210, 210)
 }
+
+.non-visible {
+  display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  .footer-link:first-child {
+    padding-left: 20px;
+  }
+
+  .footer-link {
+    font-size: 13px;
+    color: gray;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .footer-children {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .non-visible {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 13px;
+    color: rgb(180, 180, 180);
+    width: 95%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    line-height: 20px;
+  }
+
+  .copyright {
+    margin-top: 15px;
+    text-align: left;
+  }
+
+  .visible {
+    display: none;
+  }
+
+  .top {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+}
+
 
 </style>
 

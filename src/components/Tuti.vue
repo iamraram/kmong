@@ -98,7 +98,7 @@ export default {
 }
 
 .tuti {
-  margin-bottom: 250px
+  position: relative;
 }
 
 .tuti-content {
@@ -152,6 +152,50 @@ export default {
   border: 1px solid rgb(237, 237, 237);
   box-shadow: 1px 1px 10px 1px rgb(230, 230, 230);
   border-radius: 20px;
+}
+@media screen and (max-width: 768px) {
+  .tuti-title {
+    font-size: 18px;
+    text-align: left;
+    font-weight: 700;
+    line-height: 45px;
+  }
+
+  .tuti-children {
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    padding-right: 0;
+    position: relative;
+  }
+
+  .tuti-block:first-child {
+    margin-left: 0;
+  }
+
+  .tuti {
+    position: relative;
+  }
+
+  .tuti-block {
+    width: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 220px;
+  }
+
+  .tuti-content {
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+  }
+
+  .tuti-block-parent {
+    width: 100%;
+    overflow: scroll;
+  }
 }
 
 </style>
