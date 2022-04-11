@@ -196,6 +196,10 @@ export default {
     width: 100%;
     overflow: scroll;
   }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 </style>

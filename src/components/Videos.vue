@@ -239,7 +239,7 @@ a {
 }
 
 .block-child {
-    width: 1250px;
+    width: 1200px;
     height: 82%;
     display: flex;
     flex-direction: column;
@@ -247,7 +247,7 @@ a {
 }
 
 .block-children {
-    width: 1220px;
+    width: 1200px;
 }
 
 .subtitle {
@@ -282,7 +282,15 @@ a {
     }
 
     .videos {
-        overflow: scroll
+        overflow: scroll;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .right-box {
+        overflow-x: scroll;
     }
 
     .img-youtube {

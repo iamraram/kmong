@@ -250,7 +250,7 @@ a {
 }
 
 .main-content {
-    width: 1220px;
+    width: 1200px;
     height: 350px;
     display: flex;
     align-items: center;
@@ -318,13 +318,20 @@ a {
 
     .right-box {
         width: 100%;
-        overflow: scroll;
+        overflow-x: scroll;
         height: 400px;
         justify-content: flex-start;
         align-items: center;
         display: flex;
         flex-direction: row;
+    }
 
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .right-box {
+        overflow-x: scroll;
     }
 
     .tutor-box,
@@ -348,10 +355,6 @@ a {
 
     .title {
         display: none;
-    }
-
-    .right-box {
-        overflow: scroll
     }
 
     .len {
